@@ -120,16 +120,16 @@
 
     .right h2{
         position: static;
-        text-align: right;
+        text-align: left;
         text-shadow:
-                -1px -1px 0 var(--primary-color),  
-                1px -1px 0 var(--primary-color),
-                -1px  1px 0 var(--primary-color),
-                1px  1px 0 var(--primary-color);
+                -0.5px -0.5px 0 var(--primary-color),  
+                0.5px -0.5px 0 var(--primary-color),
+                -0.5px  0.5px 0 var(--primary-color),
+                0.5px  0.5px 0 var(--primary-color);
         margin: 20px 0 0 0;
         padding: 0;
         width: 70vw;
-        padding-right: 10px;
+        padding-left: 10px;
         font-size: 2em;
     }
 
@@ -139,13 +139,13 @@
     }
 
     .right h3{
-        text-align: center;
+        text-align: left;
         margin: 0;
         text-shadow:
-        -1px -1px 0 var(--primary-color),  
-        1px -1px 0 var(--primary-color),
-        -1px  1px 0 var(--primary-color),
-        1px  1px 0 var(--primary-color);
+        -0.5px -0.5px 0 var(--primary-color),  
+        0.5px -0.5px 0 var(--primary-color),
+        -0.5px  0.5px 0 var(--primary-color),
+        0.5px  0.5px 0 var(--primary-color);
     }
 
     .back-end-content{
