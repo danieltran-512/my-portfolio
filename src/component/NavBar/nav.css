@@ -1,0 +1,108 @@
+.header{
+    position: fixed;
+    overflow: hidden;
+    width: 100vw;
+    z-index: 100;
+}
+
+
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    height: 60px;
+    background-color: var(--primary-dark);
+    /* background-color: black; */
+    color: var(--font-color);
+    animation: fadeInAnimation 1s linear;
+}
+
+.left-nav{
+    margin: 0;
+}
+
+.left-nav h1{
+    font-family: 'Chakra Petch', sans-serif;
+    color: var(--primary-color);
+    font-size: 1.4em;
+    transition: 0.5s;
+    margin: 0;
+    padding: 0;
+}
+
+.left-nav h1:hover{
+    cursor: pointer;
+}
+
+.right-nav{
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 20px 0px;
+    text-align: center;
+    transition: .3s;
+}
+
+.nav-link{
+    width: 90px;
+    transition: 0.5s;
+    text-transform: lowercase;
+}
+
+.nav-link:hover{
+    cursor: pointer;
+    letter-spacing: 2px;
+    color: var(--primary-color);
+}
+
+.nav-link .active{
+    color: var(--primary-color);
+    transition: .3s;
+}
+
+.right-nav .nav-link::before, .right-nav .nav-link .active::before{
+    content: ' ';
+    height: 1px;
+    width: 0px;
+    background: var(--primary-color);
+    position: absolute;
+    bottom: 28.5px;
+    transition: .3s;
+}
+
+.right-nav .nav-link:hover::before, .right-nav .nav-link .active::before{
+    width: 80px;
+}
+
+.download-cv{
+    background-color: var(--primary-color);
+    border: none;
+    padding: 10px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: 1s ease-in-out;
+    text-decoration: none;
+    color: black;
+}
+
+.download-cv:hover{
+    letter-spacing: 2px;
+}
+
+
+@media only screen and (max-width: 750px) {
+    .right-nav{
+        display: none;
+    }
+    
+}
+
+@keyframes fadeInAnimation {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+}

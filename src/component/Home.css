@@ -1,0 +1,148 @@
+#home{
+    background-color: var(--primary-dark);
+    color: var(--font-color);
+}
+
+.landing{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    text-align: center;
+    width: 100vw;
+}
+
+.bg{
+    background-image: url(../img/daniel.png);
+    background-size: cover;
+    
+    animation-name: fadeInAnimation;
+    animation-duration: 5s;
+}
+
+.animation{
+    position: relative;
+    animation: slide 3s forwards;
+    animation-delay: 3.5s;
+}
+
+.discover{
+    transform-style: preserve-3d;
+    background-color: transparent;
+    padding: 10px;
+    width: 300px;
+    height: 50px;
+    font-size: 1em;
+    border: 3px solid var(--primary-color);
+    border-radius: 30px;
+    color: var(--primary-color);
+    text-transform: uppercase;
+    font-family: 'Chakra Petch', sans-serif;
+    font-weight: 600;
+    transition: 1.5s;
+    cursor: pointer;
+    letter-spacing: 2px;
+    animation: fadeInAnimation 2s linear;
+}
+
+.discover:hover{
+    /* background-color: var(--primary-color); */
+    color: var(--primary-dark);
+    letter-spacing: 10px;
+}
+
+.discover::before{
+    content: '';
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    background-color: var(--primary-color);
+    position: absolute;
+    transition: 1s;
+    transform: translateZ(-1px);
+    bottom: -3px;
+    left: -1px;
+}
+
+.discover:hover::before{
+    content: '';
+    width: 296px;
+    height: 50px;
+    background-color: var(--primary-color);
+    position: absolute;
+    transform: translateZ(-1px);
+}
+
+.discover::after{
+    content: '\25BA';
+    position: absolute;
+    color: var(--primary-dark);
+    transition: 3s;
+}
+
+.discover:hover::after{
+    transform: translateX(30px);
+}
+
+.landing h1{
+    width: fit-content;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid orange; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    margin-bottom: 10px;
+    animation: 
+        typing 3.5s steps(40, end),
+        blink-caret .75s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+    from { width: 0 }
+    to { width: 455px }
+  }
+  
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: var(--primary-color); }
+}
+
+@keyframes fadeInAnimation {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+}
+
+@keyframes slide {
+    from {left: 0px;}
+    to {left: 200px;}
+}
+
+@media only screen and (max-width: 750px) {
+    .landing h1{
+        border: none;
+        animation: none;
+        padding: 20px;
+        font-size: 1.5em;
+        width: fit-content;
+        height: auto;
+    }
+    .animation{
+        position: relative;
+        animation: none;
+        top: 40vh;
+    }
+
+    .bg{
+        background-image: url(../img/daniel-mobile.png);
+        background-size: cover;
+        background-position: center;
+    }
+}

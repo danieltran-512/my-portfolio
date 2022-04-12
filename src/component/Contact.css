@@ -1,0 +1,113 @@
+#contact{
+    background-color: var(--primary-dark);
+    color: white;
+    position: relative;
+    width: 100vw;
+    background: url(../img/contact.png);
+    background-size: cover;
+    background-position: center;
+    margin-top: -20px;
+    height: fit-content;
+    min-height: 100vh;
+}
+
+#contact h1{
+    margin: 0;
+    font-size: 4em;
+    color: var(--primary-dark);
+    position: relative;
+    top: 80px;
+    padding: 10px;
+    transition: 0.5s;
+}
+
+.ContactForm{
+    position: relative;
+    top: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#contact-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex: 1 0 300px;
+    max-width: 300px;
+}
+
+.row-input .form-control{
+    flex: 1 0 200px;
+    min-width: 300px;
+    margin: 10px;
+    padding: 15px;
+    background-color: transparent;
+    color: white;
+    border: 1px solid var(--primary-color);
+    border-radius: 7px;
+    font-size: 1em;
+    transition: 0.5s;
+    font-family: 'Work Sans', sans-serif !important;
+}
+
+.form-control:focus{
+    outline: none;
+    background-color: var(--primary-color);
+    color: var(--primary-dark);
+}
+
+.form-control:focus.form-control::placeholder{
+    color: var(--primary-dark);
+}
+
+.form-control::placeholder{
+    color: var(--primary-color);
+}
+
+.submit-btn{
+    margin: 20px;
+    background-color: transparent;
+    border: 1px solid var(--primary-color);
+    color: var(--primary-color);
+    font-size: 1em;
+    padding: 10px 20px;
+    font-family: 'Chakra Petch', sans-serif;
+
+}
+
+.submit-btn:hover{
+    background-color: var(--primary-color);
+    color: var(--primary-dark);
+}
+
+.errorMessage{
+    color: rgb(255, 151, 151);
+    padding-left: 15px;
+}
+
+#notifyToast {
+    color: var(--primary-dark);
+    border-radius: 6px;
+    width: 200px;
+    margin-left: 75px;
+    background-color: var(--primary-color);
+}
+
+@media screen and (max-width: 750px){
+    #contact h1{
+        color: var(--primary-color);
+        text-align: right;
+        font-size: 3em;
+    }
+
+    .ContactForm{
+        align-items:flex-end;
+        justify-content: center;
+        margin: 0;
+        top: 18vh;
+        width: fit-content;
+    }
+}

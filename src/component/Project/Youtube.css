@@ -1,0 +1,11 @@
+.youtube-video{
+    width: 400px;
+    height: 200px;
+    border-radius: 20px;
+}
+
+@media only screen and (max-width: 750px) {
+    .youtube-video{
+        width: 310px;
+    }
+}

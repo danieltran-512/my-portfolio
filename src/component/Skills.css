@@ -1,0 +1,176 @@
+#skills{
+    background-color: var(--primary-dark);
+    color: white;
+    position: relative;
+    width: 100vw;
+    background: url(../img/bg-shape.png);
+    background-size: cover;
+    background-position: center;
+    font-family: 'Work Sans', sans-serif !important;
+}
+
+.p-language{
+    width: 100px;
+    height: 100px;
+    background-color: var(--primary-color);
+    color: var(--primary-dark);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+.icon{
+    width: 50px;
+    height: 50px;
+    background-color: var(--primary-dark);
+}
+
+.p-language p{
+    margin-bottom: 0;
+}
+
+.right{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.right h2{
+    position: absolute;
+    right: 20%;
+    bottom: 80%;
+    width: 150px;
+    font-size: 3em;
+    padding: 10px;
+    text-align: right;
+    color: var(--primary-dark);
+    font-family: 'Chakra Petch', sans-serif;
+}
+
+
+.back-end{
+    position: absolute;
+    width: 150px;
+    left: 0;
+    top: 0;
+    font-size: 3em;
+    padding: 10px;
+    text-align: left;
+    font-family: 'Chakra Petch', sans-serif;
+}
+
+.back-end-content{
+    position: absolute;
+    top: 35%;
+    left: 10px;
+}
+
+.back-end-content ul, .front-end-list ul{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    transition: 0.5s ease;
+    max-width: 50vw;
+}
+
+.front-end-list h3{
+    text-align: center;
+    padding: 10px;
+    color: var(--primary-dark);
+}
+
+
+.front-end-list ul{
+    max-width: 500px;
+}
+
+.back-end-content li, .front-end-list li{
+    list-style: none;
+    margin: 10px;
+    background-color: var(--primary-color);
+    padding: 0 20px;
+    color: var(--primary-dark);
+    border-radius: 20px;
+    transition: 0.5s ease;
+    border: 1px solid var(--primary-dark);
+}
+
+.front-end-list li{
+    background-color: var(--primary-dark);
+    color: var(--primary-color);
+    margin: 10px;
+}
+
+.back-end-content li:hover, .front-end-list li:hover{
+    transform: scale(1.20);
+}
+
+@media only screen and (max-width: 750px) {
+    .back-end{
+        top: 0;
+        font-size: 2em;
+        position: static;
+    }
+
+    .back-end-content ul{
+       width: 100vw;
+    }
+
+    .right h2{
+        position: static;
+        text-align: right;
+        text-shadow:
+                -1px -1px 0 var(--primary-color),  
+                1px -1px 0 var(--primary-color),
+                -1px  1px 0 var(--primary-color),
+                1px  1px 0 var(--primary-color);
+        margin: 20px 0 0 0;
+        padding: 0;
+        width: 70vw;
+        padding-right: 10px;
+        font-size: 2em;
+    }
+
+    .right{
+        position: static;
+        text-align: right;
+    }
+
+    .right h3{
+        text-align: center;
+        margin: 0;
+        text-shadow:
+        -1px -1px 0 var(--primary-color),  
+        1px -1px 0 var(--primary-color),
+        -1px  1px 0 var(--primary-color),
+        1px  1px 0 var(--primary-color);
+    }
+
+    .back-end-content{
+        position: static;
+    }
+
+    .back-end-content ul{
+        min-width: 100vw;
+    }
+
+    .back-end-content h3{
+        padding-left: 10px;
+    }
+
+    ul{
+        margin: 0;
+        padding: 0;
+    }
+
+    .back-end-content li, .front-end-list li{
+        margin: 10px;
+    }
+
+    .front-end-list li{
+        border: 0.5px solid var(--primary-color);
+    }
+
+}
