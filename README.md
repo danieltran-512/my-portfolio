@@ -4,7 +4,6 @@ This is a website portfolio which contains a single page with mutiple sections: 
 
 # Deployment
 http://danieltranportfolio.com
-(ongoing)
 
 # Built with
 <ul>
