@@ -3,7 +3,8 @@
 This is a website portfolio which contains a single page with mutiple sections: home, about, skills, experience, and contact. It also allows users to download a copy of my CV
 
 # Deployment
-http://danieltranportfolio.com
+https://danieltran-portfolio.web.app
+http://danieltranportfolio.com (ongoing_)
 
 # Built with
 <ul>
